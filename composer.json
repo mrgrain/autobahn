@@ -1,0 +1,39 @@
+{
+  "name": "mrgrain/the-soil",
+  "description": "Autobahn is the Ueberholspur for your Composer-based WordPress stack. German Engineering.",
+  "license": "GPL-3.0+",
+  "keywords": ["wordpress", "stack", "composer", "wp", "boilerplate"],
+  "type": "project",
+  "authors": [
+    {
+      "name": "Moritz Kornher",
+      "email": "mail@moritzkornher.de"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "composer/installers": "~1.0.12",
+    "vlucas/phpdotenv": "~1.0.9",
+    "johnpbloch/wordpress": "4.2.2"
+  },
+  "extra": {
+    "installer-paths": {
+      "public/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "public/wp"
+  }
+}
+
