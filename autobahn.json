@@ -1,1 +1,29 @@
-{}
+{
+  "config": {
+    "AUTOMATIC_UPDATER_DISABLED": true,
+    "DISALLOW_FILE_MODS": true,
+    "WP_DEBUG": false,
+    "WP_DEBUG_DISPLAY": false,
+    "SCRIPT_DEBUG": false
+  },
+  "php": {
+    "display_errors": 0
+  },
+  "option": {
+  },
+  "env": {
+    "development": {
+      "config": {
+        "WP_DEBUG": true,
+        "SAVEQUERIES": true,
+        "SCRIPT_DEBUG": true,
+        "AUTOMATIC_UPDATER_DISABLED": true,
+        "DISALLOW_FILE_EDIT": false,
+        "DISALLOW_FILE_MODS": false
+      },
+      "php": {
+        "display_errors": 1
+      }
+    }
+  }
+}
