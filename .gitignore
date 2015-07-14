@@ -5,8 +5,8 @@ composer.lock
 .env
 
 public/wp
-public/wp-content
-!public/wp-content/mu-plugins/.gitkeep
-!public/wp-content/plugins/.gitkeep
-!public/wp-content/themes/.gitkeep
-!public/wp-content/uploads/.gitkeep
+public/app
+!public/app/mu-plugins/.gitkeep
+!public/app/plugins/.gitkeep
+!public/app/themes/.gitkeep
+!public/app/uploads/.gitkeep
