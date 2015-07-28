@@ -2,6 +2,7 @@
   "config": {
     "AUTOMATIC_UPDATER_DISABLED": true,
     "DISALLOW_FILE_MODS": true,
+    "DISALLOW_FILE_EDIT": true,
     "WP_DEBUG": false,
     "WP_DEBUG_DISPLAY": false,
     "SCRIPT_DEBUG": false
