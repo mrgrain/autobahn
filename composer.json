@@ -23,9 +23,9 @@
   ],
   "require": {
     "php": ">=5.4",
-    "composer/installers": "^1.0",
-    "johnpbloch/wordpress": "^4.2",
-    "mrgrain/autobahn-config": "^1.0"
+    "composer/installers": "^1.0.0",
+    "johnpbloch/wordpress": "^4.3.0",
+    "mrgrain/autobahn-config": "^1.0.0"
   },
   "extra": {
     "installer-paths": {
@@ -34,5 +34,8 @@
       "public/app/themes/{$name}/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "public/wp"
+  },
+  "require-dev": {
+    "wp-cli/wp-cli": "~0.20"
   }
 }

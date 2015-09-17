@@ -1,1 +1,7 @@
 path: public/wp
+url: http://autobahn
+core install:
+	title: Autobahn
+	admin_user: admin
+	admin_password: password
+	admin_email: mail@example.com

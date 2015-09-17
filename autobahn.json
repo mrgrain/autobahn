@@ -16,6 +16,7 @@
     "development": {
       "config": {
         "WP_DEBUG": true,
+        "WP_DEBUG_DISPLAY": true,
         "SAVEQUERIES": true,
         "SCRIPT_DEBUG": true,
         "AUTOMATIC_UPDATER_DISABLED": true,

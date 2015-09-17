@@ -3,10 +3,14 @@ composer.phar
 composer.lock
 
 .env
+.vagrant
 
-public/wp
-public/app
+public/wp/
+public/app/mu-plugins/*
 !public/app/mu-plugins/.gitkeep
+public/app/plugins/*
 !public/app/plugins/.gitkeep
+public/app/themes/*
 !public/app/themes/.gitkeep
+public/app/uploads/*
 !public/app/uploads/.gitkeep
