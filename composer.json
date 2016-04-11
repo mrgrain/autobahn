@@ -18,13 +18,13 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
+      "url": "https://wpackagist.org"
     }
   ],
   "require": {
     "php": ">=5.4",
     "composer/installers": "^1.0.0",
-    "johnpbloch/wordpress": "^4.3.0",
+    "johnpbloch/wordpress": "^4.4.0",
     "mrgrain/autobahn-config": "^1.0.0"
   },
   "extra": {
