@@ -15,7 +15,7 @@ and start your local Vagrant environment with:
 vagrant up
 ```
 
-Open your browser and navigate to [http://autobahn.jumpstart.rocks](http://autobahn.jumpstart.rocks). That's all!
+Open your browser and navigate to [autobahn.jumpstart.rocks](http://autobahn.jumpstart.rocks). That's all!
 
 
 ## License
@@ -79,9 +79,8 @@ autobahn
 #### .env file
 Sensitive environment configuration should be stored in the `.env` file based in your root directory.
 
-### autobahn.json
+#### autobahn.json
 WordPress configuration has to be set in the `autobahn.json` file in based in your root directory.
-
 
 ### Advanced Configuration
 #### Change public server directory
