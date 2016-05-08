@@ -2,7 +2,13 @@
   "name": "mrgrain/autobahn",
   "description": "Autobahn is the Ueberholspur for your Composer-based WordPress stack. German Engineering.",
   "license": "GPL-3.0+",
-  "keywords": ["wordpress", "stack", "composer", "wp", "boilerplate"],
+  "keywords": [
+    "wordpress",
+    "stack",
+    "composer",
+    "wp",
+    "boilerplate"
+  ],
   "type": "project",
   "authors": [
     {
@@ -22,20 +28,28 @@
     }
   ],
   "require": {
-    "php": ">=5.4",
+    "php": ">=5.6",
     "composer/installers": "^1.0.0",
     "johnpbloch/wordpress": "^4.4.0",
-    "mrgrain/autobahn-config": "^1.0.0"
+    "mrgrain/autobahn-config": "^1.0.0",
+    "mrgrain/autobahn-cli": "dev-master",
+    "wpackagist-theme/twentysixteen": "1.2"
   },
   "extra": {
     "installer-paths": {
-      "public/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "public/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "public/app/themes/{$name}/": ["type:wordpress-theme"]
+      "public/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "public/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "public/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
     },
     "wordpress-install-dir": "public/wp"
   },
   "require-dev": {
-    "wp-cli/wp-cli": "~0.20"
+    "wp-cli/wp-cli": "~0.23"
   }
 }
