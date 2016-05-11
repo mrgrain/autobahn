@@ -29,32 +29,46 @@ Use composer to create a new project
 ```
 composer create-project mrgrain/autobahn
 ```
-... or clone the git repository.
+... or clone the git repository and run composer install.
 ```
-git clone https://github.com/mrgrain/autobahn-cli.git
+git clone https://github.com/mrgrain/autobahn.git autobahn
+cd autobahn
+composer install
 ```
 
-#### Minimal configuration
-Set up the environment by copying `.env.example` to `.env` and adjust to your needs:
+#### Vagrant setup
+Provisioning your Vagrant virtual machine will execute all required steps: 
+```
+vagrant up
+```
+
+#### Manual setup
+After installing the composer dependencies, set up a basic configuration by copying `.env.example` to `.env` and adjust it to your needs:
 ```
 cp .env.example .env
 vim .env
 ```
-This most likely means changing the database connection and setting an appropriate `WP_HOME` URL.
+This most likely required you to change the database connection details and set an appropriate `WP_HOME` URL.
 
-Next, generate your WordPress keys using the Autobahn CLI:
+Next generate the WordPress security keys using Autobahn CLI:
 ```
 ./vendor/bin/autobahn keys:generate
 ```
-
-#### Install WordPress
 
 Finally, run the WordPress install via wp-cli (change URL to an appropriate value):
 ```
 ./vendor/bin/wp core install --url=http://localhost
 ```
 
-### Files setup
+### Basic usage
+
+#### .env file
+Sensitive environment configuration should be stored in the `.env` file based in your root directory.
+
+#### autobahn.json
+WordPress configuration has to be set in the `autobahn.json` file in based in your root directory.
+
+#### Files setup
 ```
 autobahn
 |-- public              # web server root
@@ -74,15 +88,30 @@ autobahn
 `-- autobahn.json       # Autobahn WordPress configuration
 ```
 
-### Configuration
+### Settings
 
-#### .env file
-Sensitive environment configuration should be stored in the `.env` file based in your root directory.
+#### Autobahn constants
+`WP_ENV` - Set the environment, defaults to `development`.
+`WPMU_LOADER` - Path to a mu-plugins loader, see [advanced configuration](#mu-plugins-loader) section.
 
-#### autobahn.json
-WordPress configuration has to be set in the `autobahn.json` file in based in your root directory.
+#### Path constants
+`PUBLIC_DIR` - Absolute or relative (project's root directory) path to the public web server document root directory, defaults to `public/`.
+`CONTENT_DIR` - Relative path (from `PUBLIC_DIR`) to the WordPress content directory, defaults to `app/`.
+`WORDPRESS_DIR` - Relative path( from `PUBLIC_DIR`) to the WordPress core, defaults to `wpp/`.
+
+#### WordPress constants
+All default WordPress constants are available via `.env` or `autobahn.json`.
+
+#### WordPress options
+Any WordPress option can be forced to a value using the `options` section in the `autobahn.json` file. 
+
+#### PHP configuration
+
+### Environments
 
 ### Advanced Configuration
+#### mu-plugins loader
+
 #### Change public server directory
 The easiest way to achieve this, is setting a symlink to the existing `public` directory.
 ```

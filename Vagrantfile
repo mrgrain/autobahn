@@ -24,6 +24,7 @@ Vagrant.configure("2") do |config|
     # provisioning
     config.vm.provision "shell", inline: <<-SHELL
         cd /var/www
+        composer install
         cp -n .env.example .env
         sudo -u vagrant ./vendor/bin/autobahn keys:generate -q
         sudo -u vagrant ./vendor/bin/wp core install --url="http://autobahn.jumpstart.rocks" --skip-email
