@@ -14,9 +14,8 @@ and start your local Vagrant environment with:
 ```
 vagrant up
 ```
-
 Open your browser and navigate to [autobahn.jumpstart.rocks](http://autobahn.jumpstart.rocks). That's all!
-
+You can login to the [admin panel](http://autobahn.jumpstart.rocks/wp/wp-admin/) using `admin/password` as credentials.
 
 ## License
 The mrgrain/autobahn package is open-sourced software licensed under the [GPL-3.0](LICENSE) license.
@@ -43,12 +42,12 @@ vagrant up
 ```
 
 #### Manual setup
-After installing the composer dependencies, set up a basic configuration by copying `.env.example` to `.env` and adjust it to your needs:
+After installing composer dependencies, set up the basic configuration by copying `.env.example` to `.env` and adjust it to your needs:
 ```
 cp .env.example .env
 vim .env
 ```
-This most likely required you to change the database connection details and set an appropriate `WP_HOME` URL.
+This most likely requires you to change the database connection details and set an appropriate `WP_HOME` URL.
 
 Next generate the WordPress security keys using Autobahn CLI:
 ```
