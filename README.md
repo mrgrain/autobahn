@@ -14,8 +14,8 @@ and start your local Vagrant environment with:
 ```
 vagrant up
 ```
-Open your browser and navigate to [autobahn.jumpstart.rocks](http://autobahn.jumpstart.rocks). That's all!
-You can login to the [admin panel](http://autobahn.jumpstart.rocks/wp/wp-admin/) using `admin/password` as credentials.
+Open your browser and navigate to [my.autobahn.rocks](http://my.autobahn.rocks). That's all!
+You can login to the [admin panel](http://my.autobahn.rocks/wp/wp-admin/) using `admin/password` as credentials.
 
 ## License
 The mrgrain/autobahn package is open-sourced software licensed under the [GPL-3.0](LICENSE) license.
@@ -36,7 +36,7 @@ composer install
 ```
 
 #### Vagrant setup
-Provisioning your Vagrant virtual machine will execute all required steps: 
+Provisioning your Vagrant virtual machine will execute all required steps:
 ```
 vagrant up
 ```
@@ -102,7 +102,7 @@ autobahn
 All default WordPress constants are available via `.env` or `autobahn.json`.
 
 #### WordPress options
-Any WordPress option can be forced to a value using the `options` section in the `autobahn.json` file. 
+Any WordPress option can be forced to a value using the `options` section in the `autobahn.json` file.
 
 #### PHP configuration
 
@@ -166,6 +166,6 @@ By default WordPress is installed to `public/wp`. If you want to change the loca
 #### wp-cli.yml
 You can set any configuration for wp-cli to its `wp-cli.yml` file. For example you might want to globally set the `url` value and thus skip passing it on to every command:
 ```yml
-url: http://autobahn.jumpstart.rocks
+url: http://my.autobahn.rocks
 ```
 Please be aware that changing the `path` will require further adjustments to keep everything working.
