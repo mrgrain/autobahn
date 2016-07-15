@@ -33,7 +33,8 @@
     "johnpbloch/wordpress": "^4.4.0",
     "mrgrain/autobahn-config": "^1.0.0",
     "mrgrain/autobahn-cli": "dev-master",
-    "wpackagist-theme/twentysixteen": "1.2"
+    "wpackagist-theme/twentysixteen": "1.2",
+    "roots/wp-password-bcrypt": "1.0.*"
   },
   "extra": {
     "installer-paths": {
