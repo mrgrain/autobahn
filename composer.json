@@ -16,8 +16,7 @@
       "email": "mail@moritzkornher.de"
     }
   ],
-  "minimum-stability": "dev",
-  "prefer-stable": true,
+  "minimum-stability": "stable",
   "config": {
     "preferred-install": "dist"
   },
@@ -32,7 +31,7 @@
     "composer/installers": "^1.0.0",
     "johnpbloch/wordpress": "^4.5.0",
     "mrgrain/autobahn-config": "^1.1.1",
-    "mrgrain/autobahn-cli": "^0.1",
+    "mrgrain/autobahn-cli": "~0.2.0",
     "roots/wp-password-bcrypt": "^1.0",
     "mrgrain/bedrock-autoloader": "1.0",
     "wpackagist-theme/twentysixteen": "^1.2"
