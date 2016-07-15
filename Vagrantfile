@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
     config.vm.box_version = ">= 2.5"
 
     # network
-    config.vm.network "private_network", ip: "192.168.200.19"
+    config.vm.network "private_network", ip: ENV["VAGRANT_IP"] || "192.168.200.19"
     # You may safely use this domain, we control it and guarantee it won't be used otherwise
     config.vm.hostname = ENV["VAGRANT_HOSTNAME"] || "my.autobahn.rocks"
 
