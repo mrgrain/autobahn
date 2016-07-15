@@ -34,7 +34,8 @@
     "mrgrain/autobahn-config": "^1.0.0",
     "mrgrain/autobahn-cli": "dev-master",
     "wpackagist-theme/twentysixteen": "1.2",
-    "roots/wp-password-bcrypt": "1.0.*"
+    "roots/wp-password-bcrypt": "1.0.*",
+    "mrgrain/bedrock-autoloader": "dev-master"
   },
   "extra": {
     "installer-paths": {

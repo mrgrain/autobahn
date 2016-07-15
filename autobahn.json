@@ -1,5 +1,6 @@
 {
   "config": {
+    "WPMU_LOADER": "bedrock-autoloader/bedrock-autoloader.php",
     "AUTOMATIC_UPDATER_DISABLED": true,
     "DISALLOW_FILE_MODS": true,
     "DISALLOW_FILE_EDIT": true,
@@ -9,8 +10,6 @@
   },
   "php": {
     "display_errors": 0
-  },
-  "option": {
   },
   "env": {
     "development": {
