@@ -51,6 +51,6 @@
     "wordpress-install-dir": "public/wp"
   },
   "require-dev": {
-    "wp-cli/wp-cli": "~0.23"
+    "wp-cli/wp-cli": "~1.0.0"
   }
 }
