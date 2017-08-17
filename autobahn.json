@@ -20,7 +20,8 @@
         "SCRIPT_DEBUG": true,
         "AUTOMATIC_UPDATER_DISABLED": true,
         "DISALLOW_FILE_EDIT": false,
-        "DISALLOW_FILE_MODS": false
+        "DISALLOW_FILE_MODS": false,
+        "WP_CACHE": false
       },
       "php": {
         "display_errors": 1
